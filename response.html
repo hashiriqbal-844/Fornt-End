@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        /* <!--Navbar and Header --> */
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+        .logo img{
+            height: 100px;
+            width: 100px;
+        }
+        #home{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding: 4px 200px;
+            height: 400px;
+            flex-direction: column;
+        }
+        #home::before{
+            content: "";
+            position: absolute;
+            background: url('cover.jpg') no-repeat center center/cover;
+            width: 100%;
+            margin: 0px -200px;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        .para{
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        #navbar{
+            display: flex;
+            text-decoration: none;
+        }
+        #navbar ul{
+            display: flex;
+            margin: 40px 500px;
+            list-style: none;
+        }
+        #navbar ul li{
+            padding: 0px 15px;
+        }
+        #navbar ul li a{
+            color: white;
+            font-size: 22px;
+            display: block;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+        }
+        #navbar ul li a:hover{
+            text-decoration: underline;
+            color:rgb(241, 170, 77);
+            cursor: pointer;
+            /* background-color: white; */
+            /* border-radius: 12px; */
+            text-align: center;
+        }
+        .para h1{
+            font-size: 50px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .para p{
+            font-size: 18px;
+            cursor: pointer;
+            margin: 8px 0px;
+            padding: 2px 0px;
+        }
+        /* <!-- Container Section --> */
+        .container{
+            height: 400px;
+            width: 100%;
+            border: 0px solid black;
+            margin: 200px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:rgb(255, 255, 255);
+        }       
+        .box{
+            font-family: 'Baloo Bhai 2', cursive;
+            border: 3px;
+            height: 300px;
+            width: 450px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color:white;
+            color: black;
+            padding: 0px 15px;
+            margin: 0px 2px;
+            border: 10px solid white;
+            cursor: pointer;
+            border-radius: 25px;
+            
+        }
+        #item-1 p{
+            padding: 20px 0px;
+        }
+        #item-1 h2{
+            padding: 15px 0px;
+        }
+        #item-1 img{
+            height: 50px;
+            width: 50px;
+        }
+        #item-2 p{
+            padding: 20px 0px;
+        }
+        #item-2 h2{
+            padding: 15px 0px;
+        }
+        #item-2 img{
+            height: 50px;
+            width: 50px;
+        }
+        #item-3 p{
+            padding: 20px 0px;
+        }
+        #item-3 h2{
+            padding: 15px 0px;
+        }
+        #item-3 img{
+            height: 50px;
+            width: 50px;
+        }
+        .container .box{
+            box-shadow: -20px 20px 10px rgba(0,0,0,0.3);
+        }
+        /* <!-- Footer Section --> */
+        .footer{
+            background-color: rgb(33, 33, 92);
+            height: 300px;
+            width: 100%;
+            position: relative;
+        }
+        .footer .footer-bottom{
+            background-color: rgb(86, 86, 184);
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            padding-top: 18px;
+            bottom: 0px;
+            position: absolute;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+        }
+        .footer .footer-content .footer-section{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+            /* margin: 33px 0px; */
+            padding: 25px 0px;
+            font-size: 16px;
+        }
+        .fa{
+            color:black;
+            padding: 0px 5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar and Header -->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="gym.png" alt="">
+        </div>
+        <ul>
+            <li class="item"><a>Home</a></li>
+            <li class="item"><a>Contant Us</a></li>
+            <li class="item"><a>About Us</a></li>
+            <li class="item"><a href="index.html">Others</a></li>
+        </ul>
+    </nav>
+<section id="home">
+    <div class="para">
+    <h1>Welcome To My Gym Website</h1>
+    <p>Lorem ipsum dolor rem voluptates quis, tenetur debitis eaque nihil harum error nam. Quos quaerat, quasi atque quibusdam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minima, consectetur animi explicabo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div>
+</section>
+<!--End Navbar and Header -->
+<!-- Container Section -->
+<div class="container">
+    <div class="box" id="item-1">
+        <img src="yoga-pose.png" alt="">
+        <h2>Yoga</h2>
+        <p>Lorem ipsum dolor rem voluptates quis, tenetur debitis eaque nihil harum error nam. Quos quaerat, quasi atque quibusdamLorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minima, consectetur animi explicabo.</p>
+    </div>
+    <div class="box" id="item-2">
+        <img src="weightlifter.png" alt="">
+        <h2>Body Building</h2>
+        <p>Lorem ipsum dolor rem voluptates quis, tenetur debitis eaque nihil harum error nam. Quos quaerat, quasi atque quibusdamLorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minima, consectetur animi explicabo.</p>
+    </div>
+
+    <div class="box" id="item-3">
+        <img src="weightlifting.png" alt="">
+        <h2>Weight Lifting</h2>
+        <p>Lorem ipsum dolor rem voluptates quis, tenetur debitis eaque nihil harum error nam. Quos quaerat, quasi atque quibusdamLorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minima, consectetur animi explicabo.</p>
+    </div>
+    </div>
+    <!--End Container Section -->
+    <!--  -->
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h1 class="logo-text"><span>My Gym</span>Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit rem quis dolor perspiciatis cum nobis temporibus.Fugit minima, consectetur animi explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, officia ab saepe corrupti laudantium quos.</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                    <br>
+                    <span><i class="fas fa-envelope"></i> &nbsp;abc123@gmail.com</span>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa fa-facebook">Facebook</i></a>
+                    <a href="#"><i class="fa fa-instagram">Instagram</i></a>
+                    <a href="#"><i class="fa fa-twitter">Twitter</i></a>
+                    <a href="#"><i class="fa fa-youtube">Youtube</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            My Gym Website &copy; 2020
+        </div>
+    </div>
+    <!--End Footer Section -->
+</body>
+</html>
